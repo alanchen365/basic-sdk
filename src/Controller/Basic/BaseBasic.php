@@ -19,6 +19,9 @@ class BaseBasic extends Common
             $params = $this->getParams();
 
             /** 校验参数 */
+            if (superEmpty($params) || !is_array($params)) {
+                throw new InfoException(1022, '参数有误');
+            }
             foreach ($params as $key => $param) {
                 if (superEmpty($param['id'])) {
                     throw new InfoException(1022, '参数有误');
@@ -52,6 +55,9 @@ class BaseBasic extends Common
             $params = $this->getParams();
 
             /** 校验参数 */
+            if (superEmpty($params) || !is_array($params)) {
+                throw new InfoException(1022, '参数有误');
+            }
             foreach ($params as $key => $param) {
                 if (superEmpty($param['id'])) {
                     throw new InfoException(1022, '参数有误');
