@@ -25,11 +25,9 @@ class BaseBasicDao
         $existIds = array_column($this->getAll(['id' => [$ids, 'IN']])['list'], 'id');
 
         /** 循环插入数据 */
-        foreach ($params as $key => $param)
-        {
+        foreach ($params as $key => $param) {
             /** 过滤掉已经存在的数据 */
-            if (!in_array($param['id'], $existIds))
-            {
+            if (!in_array($param['id'], $existIds)) {
                 $newId = $this->save($param);
                 if (superEmpty($newId)) {
                     throw new InfoException(1027, "插入数据[" . json_encode($param) . "]失败");
@@ -38,7 +36,7 @@ class BaseBasicDao
                 /** 记录Log */
                 $lastQuery = DbManager::getInstance()->getLastQuery()->getLastQuery();
                 $schemaInfo = $this->model->schemaInfo();
-                Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, $schemaInfo->getTable());
+                Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, 'basic_sdk_' . $schemaInfo->getTable());
             }
         }
     }
@@ -57,8 +55,7 @@ class BaseBasicDao
         /** 获取已经存在的ID */
         $existIds = array_column($this->getAll(['id' => [$ids, 'IN']])['list'], 'id');
 
-        foreach ($params as $key => $param)
-        {
+        foreach ($params as $key => $param) {
             /** 校验ID是否已经存在 */
             if (!in_array($param['id'], $existIds)) {
                 throw new InfoException(1028, "ID[" . $param['id'] . "]不存在，无法进行修改");
@@ -76,7 +73,7 @@ class BaseBasicDao
             /** 记录Log */
             $lastQuery = DbManager::getInstance()->getLastQuery()->getLastQuery();
             $schemaInfo = $this->model->schemaInfo();
-            Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, $schemaInfo->getTable());
+            Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, 'basic_sdk_' . $schemaInfo->getTable());
         }
     }
 
@@ -91,24 +88,23 @@ class BaseBasicDao
         /** 获取已经存在的ID */
         $existIds = array_column($this->getAll(['id' => [$ids, 'IN']])['list'], 'id');
 
-        foreach ($ids as $id)
-        {
-            /** 校验ID是否已经存在 */
-            if (!in_array($id, $existIds)) {
-                throw new InfoException(1028, "ID[" . $id . "]不存在，无法进行删除");
-            }
+        foreach ($ids as $id) {
+//            /** 校验ID是否已经存在 */
+//            if (!in_array($id, $existIds)) {
+//                throw new InfoException(1028, "ID[" . $id . "]不存在，无法进行删除");
+//            }
 
             /** 删除 */
             $rows = $this->delete([$id]);
 
-            if (superEmpty($rows)) {
-                throw new InfoException(1027, "删除数据[" . $id . "]失败");
-            }
+//            if (superEmpty($rows)) {
+//                throw new InfoException(1027, "删除数据[" . $id . "]失败");
+//            }
 
             /** 记录Log */
             $lastQuery = DbManager::getInstance()->getLastQuery()->getLastQuery();
             $schemaInfo = $this->model->schemaInfo();
-            Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, $schemaInfo->getTable());
+            Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, 'basic_sdk_' . $schemaInfo->getTable());
         }
     }
 
