@@ -76,7 +76,6 @@ class BaseBasicDao
             Logger::getInstance()->log($lastQuery, Logger::LOG_LEVEL_INFO, 'basic_sdk_' . $schemaInfo->getTable());
         }
     }
-
     /**
      * 删除
      * @param array $ids
