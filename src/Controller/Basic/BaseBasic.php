@@ -94,11 +94,11 @@ class BaseBasic extends Common
             if (superEmpty($params) || !is_array($params)) {
                 throw new InfoException(1022, '参数有误');
             }
-            foreach ($params as $id) {
-                if (!is_int($id)) {
-                    throw new InfoException(1022, '参数有误');
-                }
-            }
+//            foreach ($params as $id) {
+//                if (!is_int($id)) {
+//                    throw new InfoException(1022, '参数有误');
+//                }
+//            }
 
             /** 开启事务 */
             DbManager::getInstance()->startTransaction();
