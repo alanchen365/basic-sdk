@@ -372,6 +372,13 @@ return [
         $route->addRoute(['POST'], '/supplier/delete', '/Basic/Supplier/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/supplier', '/Basic/Supplier/update');
+
+        // 添加单条
+        $route->addRoute(['POST'], '/depotareas', '/Basic/DepotAreas/save');
+        // 删除单条
+        $route->addRoute(['POST'], '/depotareas/delete', '/Basic/DepotAreas/delete');
+        // 修改单条
+        $route->addRoute(['PUT'], '/depotareas/{id:\d+}', '/Basic/DepotAreas/update');
         },
   ]
 ];
