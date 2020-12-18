@@ -385,7 +385,7 @@ return [
         // 删除单条
         $route->addRoute(['POST'], '/orderin/delete', '/Basic/OrderIn/delete');
         // 修改单条
-        $route->addRoute(['PUT'], '/orderin/{id:\d+}', '/Basic/OrderIn/update');
+        $route->addRoute(['PUT'], '/orderin', '/Basic/OrderIn/update');
 
 
         // 添加单条
@@ -393,7 +393,7 @@ return [
         // 删除单条
         $route->addRoute(['POST'], '/orderinpro/delete', '/Basic/OrderInPro/delete');
         // 修改单条
-        $route->addRoute(['PUT'], '/orderinpro/{id:\d+}', '/Basic/OrderInPro/update');
+        $route->addRoute(['PUT'], '/orderinpro', '/Basic/OrderInPro/update');
 
 
         // 添加单条
@@ -401,7 +401,7 @@ return [
         // 删除单条
         $route->addRoute(['POST'], '/orderout/delete', '/Basic/OrderOut/delete');
         // 修改单条
-        $route->addRoute(['PUT'], '/orderout/{id:\d+}', '/Basic/OrderOut/update');
+        $route->addRoute(['PUT'], '/orderout', '/Basic/OrderOut/update');
 
 
         // 添加单条
@@ -409,7 +409,7 @@ return [
         // 删除单条
         $route->addRoute(['POST'], '/orderoutpro/delete', '/Basic/OrderOutPro/delete');
         // 修改单条
-        $route->addRoute(['PUT'], '/orderoutpro/{id:\d+}', '/Basic/OrderOutPro/update');
+        $route->addRoute(['PUT'], '/orderoutpro', '/Basic/OrderOutPro/update');
         },
   ]
 ];
