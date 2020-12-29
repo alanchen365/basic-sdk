@@ -11,6 +11,6 @@ class OrderInProModel extends Model
 
     protected $autoTimeStamp = 'datetime';
 
-    protected $createTime = 'create_time';
+//    protected $createTime = 'create_time';
         
 }

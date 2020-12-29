@@ -11,7 +11,7 @@ class ExpressStoreModel extends Model
 
     protected $autoTimeStamp = 'datetime';
 
-    protected $createTime = 'create_time';
+//    protected $createTime = 'create_time';
         
-    protected $updateTime = 'update_time';
+//    protected $updateTime = 'update_time';
 }
