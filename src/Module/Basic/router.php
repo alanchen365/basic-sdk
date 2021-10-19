@@ -410,6 +410,22 @@ return [
         $route->addRoute(['POST'], '/orderoutpro/delete', '/Basic/OrderOutPro/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/orderoutpro', '/Basic/OrderOutPro/update');
+
+
+        // 添加单条
+        $route->addRoute(['POST'], '/ownerinvoiceaddress', '/Basic/OwnerInvoiceAddress/save');
+        // 删除单条
+        $route->addRoute(['POST'], '/ownerinvoiceaddress/delete', '/Basic/OwnerInvoiceAddress/delete');
+        // 修改单条
+        $route->addRoute(['PUT'], '/ownerinvoiceaddress', '/Basic/OwnerInvoiceAddress/update');
+
+
+        // 添加单条
+        $route->addRoute(['POST'], '/ownertoinvoiceaddress', '/Basic/OwnerToInvoiceAddress/save');
+        // 删除单条
+        $route->addRoute(['POST'], '/ownertoinvoiceaddress/delete', '/Basic/OwnerToInvoiceAddress/delete');
+        // 修改单条
+        $route->addRoute(['PUT'], '/ownertoinvoiceaddress', '/Basic/OwnerToInvoiceAddress/update');
         },
   ]
 ];
