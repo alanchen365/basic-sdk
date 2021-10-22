@@ -70,7 +70,7 @@ class OwnerToInvoiceAddressValidate
     {
         $validate = new Validate();
 
-        $validate->addColumn('id', OwnerToInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
+        // $validate->addColumn('id', OwnerToInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
         // $validate->addColumn('app_code', OwnerToInvoiceAddressValidate::$alias['app_code']);
         // $validate->addColumn('owner_id', OwnerToInvoiceAddressValidate::$alias['owner_id']);
         // $validate->addColumn('invoice_address_id', OwnerToInvoiceAddressValidate::$alias['invoice_address_id']);
@@ -86,7 +86,7 @@ class OwnerToInvoiceAddressValidate
     {
         $validate = new Validate();
 
-        $validate->addColumn('id', OwnerToInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
+        // $validate->addColumn('id', OwnerToInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
         // $validate->addColumn('app_code', OwnerToInvoiceAddressValidate::$alias['app_code']);
         // $validate->addColumn('owner_id', OwnerToInvoiceAddressValidate::$alias['owner_id']);
         // $validate->addColumn('invoice_address_id', OwnerToInvoiceAddressValidate::$alias['invoice_address_id']);

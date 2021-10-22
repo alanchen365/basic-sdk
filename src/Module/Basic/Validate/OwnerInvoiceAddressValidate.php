@@ -58,7 +58,7 @@ class OwnerInvoiceAddressValidate
     {
         $validate = new Validate();
 
-        $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id']);
+        // $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id']);
         // $validate->addColumn('app_code', OwnerInvoiceAddressValidate::$alias['app_code']);
         // $validate->addColumn('owner_id', OwnerInvoiceAddressValidate::$alias['owner_id']);
         // $validate->addColumn('type', OwnerInvoiceAddressValidate::$alias['type']);
@@ -84,12 +84,12 @@ class OwnerInvoiceAddressValidate
         $validate = new Validate();
 
         // $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id']);
-        $validate->addColumn('app_code', OwnerInvoiceAddressValidate::$alias['app_code']);
-        $validate->addColumn('type', OwnerInvoiceAddressValidate::$alias['type']);
+        // $validate->addColumn('app_code', OwnerInvoiceAddressValidate::$alias['app_code']);
+        // $validate->addColumn('type', OwnerInvoiceAddressValidate::$alias['type']);
         // $validate->addColumn('email', OwnerInvoiceAddressValidate::$alias['email']);
-        $validate->addColumn('name', OwnerInvoiceAddressValidate::$alias['name'])->required()->notEmpty();
-        $validate->addColumn('payer_type', OwnerInvoiceAddressValidate::$alias['payer_type'])->required()->notEmpty();
-        $validate->addColumn('duty_paragraph', OwnerInvoiceAddressValidate::$alias['duty_paragraph'])->required()->notEmpty();
+        // $validate->addColumn('name', OwnerInvoiceAddressValidate::$alias['name'])->required()->notEmpty();
+        // $validate->addColumn('payer_type', OwnerInvoiceAddressValidate::$alias['payer_type'])->required()->notEmpty();
+        // $validate->addColumn('duty_paragraph', OwnerInvoiceAddressValidate::$alias['duty_paragraph'])->required()->notEmpty();
         // $validate->addColumn('city', OwnerInvoiceAddressValidate::$alias['city']);
         // $validate->addColumn('district', OwnerInvoiceAddressValidate::$alias['district']);
         // $validate->addColumn('complete_address', OwnerInvoiceAddressValidate::$alias['complete_address']);
@@ -108,7 +108,7 @@ class OwnerInvoiceAddressValidate
     {
         $validate = new Validate();
 
-        $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
+        // $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
         // $validate->addColumn('app_code', OwnerInvoiceAddressValidate::$alias['app_code']);
         // $validate->addColumn('owner_id', OwnerInvoiceAddressValidate::$alias['owner_id']);
         // $validate->addColumn('type', OwnerInvoiceAddressValidate::$alias['type']);
@@ -133,7 +133,7 @@ class OwnerInvoiceAddressValidate
     {
         $validate = new Validate();
 
-        $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
+        // $validate->addColumn('id', OwnerInvoiceAddressValidate::$alias['id'])->required()->notEmpty();
         // $validate->addColumn('app_code', OwnerInvoiceAddressValidate::$alias['app_code']);
         // $validate->addColumn('owner_id', OwnerInvoiceAddressValidate::$alias['owner_id']);
         // $validate->addColumn('type', OwnerInvoiceAddressValidate::$alias['type']);
@@ -151,13 +151,6 @@ class OwnerInvoiceAddressValidate
         // $validate->addColumn('update_time', OwnerInvoiceAddressValidate::$alias['update_time']);
         // $validate->addColumn('delete_flg', OwnerInvoiceAddressValidate::$alias['delete_flg']);
         
-        return $validate;
-    }
-
-    public function getInvoiceAddressList(array $params): ?Validate
-    {
-        $validate = new Validate();
-        $validate->addColumn('owner_id', OwnerInvoiceAddressValidate::$alias['owner_id']);
         return $validate;
     }
 }
