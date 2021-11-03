@@ -141,31 +141,7 @@ return [
         // 修改单条
         $route->addRoute(['PUT'], '/product', '/Basic/Product/update');
         
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/productbrand', '/Basic/ProductBrand/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/productbrand/delete', '/Basic/ProductBrand/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/productbrand', '/Basic/ProductBrand/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/productimport', '/Basic/ProductImport/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/productimport/delete', '/Basic/ProductImport/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/productimport', '/Basic/ProductImport/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/productsupplier', '/Basic/ProductSupplier/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/productsupplier/delete', '/Basic/ProductSupplier/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/productsupplier', '/Basic/ProductSupplier/update');
-        
-        
+
         // 添加单条
         $route->addRoute(['POST'], '/producttotype', '/Basic/ProductToType/save');
         // 删除单条
@@ -285,47 +261,7 @@ return [
         // 修改单条
         $route->addRoute(['PUT'], '/rbacusergroup', '/Basic/RbacUserGroup/update');
         
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/region', '/Basic/Region/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/region/delete', '/Basic/Region/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/region', '/Basic/Region/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/regionareas', '/Basic/RegionAreas/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/regionareas/delete', '/Basic/RegionAreas/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/regionareas', '/Basic/RegionAreas/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/regiondepot', '/Basic/RegionDepot/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/regiondepot/delete', '/Basic/RegionDepot/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/regiondepot', '/Basic/RegionDepot/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/regionorgan', '/Basic/RegionOrgan/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/regionorgan/delete', '/Basic/RegionOrgan/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/regionorgan', '/Basic/RegionOrgan/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/regionowner', '/Basic/RegionOwner/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/regionowner/delete', '/Basic/RegionOwner/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/regionowner', '/Basic/RegionOwner/update');
-        
-        
+
         // 添加单条
         $route->addRoute(['POST'], '/store', '/Basic/Store/save');
         // 删除单条
@@ -356,22 +292,7 @@ return [
         $route->addRoute(['POST'], '/storedepot/delete', '/Basic/StoreDepot/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/storedepot', '/Basic/StoreDepot/update');
-        
-        
-        // 添加单条
-        $route->addRoute(['POST'], '/storeimport', '/Basic/StoreImport/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/storeimport/delete', '/Basic/StoreImport/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/storeimport', '/Basic/StoreImport/update');
-        
-        
-        // 添加单条å
-        $route->addRoute(['POST'], '/supplier', '/Basic/Supplier/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/supplier/delete', '/Basic/Supplier/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/supplier', '/Basic/Supplier/update');
+
 
         // 添加单条
         $route->addRoute(['POST'], '/depotareas', '/Basic/DepotAreas/save');
@@ -379,37 +300,6 @@ return [
         $route->addRoute(['POST'], '/depotareas/delete', '/Basic/DepotAreas/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/depotareas/{id:\d+}', '/Basic/DepotAreas/update');
-
-        // 添加单条
-        $route->addRoute(['POST'], '/orderin', '/Basic/OrderIn/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/orderin/delete', '/Basic/OrderIn/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/orderin', '/Basic/OrderIn/update');
-
-
-        // 添加单条
-        $route->addRoute(['POST'], '/orderinpro', '/Basic/OrderInPro/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/orderinpro/delete', '/Basic/OrderInPro/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/orderinpro', '/Basic/OrderInPro/update');
-
-
-        // 添加单条
-        $route->addRoute(['POST'], '/orderout', '/Basic/OrderOut/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/orderout/delete', '/Basic/OrderOut/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/orderout', '/Basic/OrderOut/update');
-
-
-        // 添加单条
-        $route->addRoute(['POST'], '/orderoutpro', '/Basic/OrderOutPro/save');
-        // 删除单条
-        $route->addRoute(['POST'], '/orderoutpro/delete', '/Basic/OrderOutPro/delete');
-        // 修改单条
-        $route->addRoute(['PUT'], '/orderoutpro', '/Basic/OrderOutPro/update');
 
 
         // 添加单条
@@ -426,6 +316,14 @@ return [
         $route->addRoute(['POST'], '/ownertoinvoiceaddress/delete', '/Basic/OwnerToInvoiceAddress/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/ownertoinvoiceaddress', '/Basic/OwnerToInvoiceAddress/update');
-        },
+
+
+        // 添加单条
+        $route->addRoute(['POST'], '/ownersupplier', '/Basic/OwnerSupplier/save');
+        // 删除单条
+        $route->addRoute(['POST'], '/ownersupplier/delete', '/Basic/OwnerSupplier/delete');
+        // 修改单条
+        $route->addRoute(['PUT'], '/ownersupplier', '/Basic/OwnerSupplier/update');
+    },
   ]
 ];

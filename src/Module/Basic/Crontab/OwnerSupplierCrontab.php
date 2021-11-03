@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Module\Basic\Crontab;
+namespace App\Module\Asal\Crontab;
 
 use EasySwoole\EasySwoole\Crontab\AbstractCronTask;
 use EasySwoole\EasySwoole\Task\TaskManager;
 
-class OrderInCrontab extends AbstractCronTask
+class OwnerSupplierCrontab extends AbstractCronTask
 {
     /**
      * 执行规则
@@ -20,7 +20,7 @@ class OrderInCrontab extends AbstractCronTask
      */
     public static function getTaskName(): string
     {
-        return 'OrderInCrontab';
+        return 'OwnerSupplierCrontab';
     }
 
     public function run(int $taskId, int $workerIndex)
