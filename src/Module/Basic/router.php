@@ -324,6 +324,21 @@ return [
         $route->addRoute(['POST'], '/ownersupplier/delete', '/Basic/OwnerSupplier/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/ownersupplier', '/Basic/OwnerSupplier/update');
+
+        // 添加单条
+        $route->addRoute(['POST'], '/paydepotfee', '/Basic/PayDepotFee/save');
+        // 修改单条
+        $route->addRoute(['PUT'], '/paydepotfee', '/Basic/PayDepotFee/update');
+
+        // 添加单条
+        $route->addRoute(['POST'], '/receivedepotfee', '/Basic/ReceiveDepotFee/save');
+        // 修改单条
+        $route->addRoute(['PUT'], '/receivedepotfee', '/Basic/ReceiveDepotFee/update');
+
+        // 添加单条
+        $route->addRoute(['POST'], '/supplierdepotfee', '/Basic/SupplierDepotFee/save');
+        // 修改单条
+        $route->addRoute(['PUT'], '/supplierdepotfee', '/Basic/SupplierDepotFee/update');
     },
   ]
 ];
