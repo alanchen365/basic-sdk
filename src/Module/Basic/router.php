@@ -60,7 +60,13 @@ return [
         $route->addRoute(['POST'], '/driver/delete', '/Basic/Driver/delete');
         // 修改单条
         $route->addRoute(['PUT'], '/driver', '/Basic/Driver/update');
-        
+
+
+        // 添加单条
+        $route->addRoute(['POST'], '/drivertologistics', '/Basic/DriverToLogistics/save');
+        // 删除单条
+        $route->addRoute(['POST'], '/drivertologistics/delete', '/Basic/DriverToLogistics/delete');
+
         
         // 添加单条
         $route->addRoute(['POST'], '/express', '/Basic/Express/save');
